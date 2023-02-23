@@ -1,11 +1,12 @@
-La página https://petstore.swagger.io/ proporciona la documentación sobre apis de una “PetStore”.
-Utilizando un software para pruebas de servicios REST realizar las siguientes pruebas, identificando las entradas, capturando las salidas, test, variables, etc, en cada uno de los siguientes casos:
-• Añadir una mascota a la tienda post
-• Consultar la mascota ingresada previamente (Búsqueda por ID) get
-• Actualizar el nombre de la mascota y el estatus de la mascota a “sold” put
-• Consultar la mascota modificada por estatus (Búsqueda por estatus)
+Para ejecutar el proyecto se deben instalar todas las dependencias descritas  correctamnete.
 
+1. el feature continue todos los escenarios para la ejecucion de la insercion, consulta y modificacion de informacion.
 
-framework usado: karate + cucumber
-gestor dependencias: gradle
-reporte cucumber
+3. para el desarrollo del proyecto APi rest se utiliza:
+ -Framework usado: karate + cucumber
+ -Gestor dependencias: gradle
+- Reporte cucumber.
+-
+3. para ejecutar el proyecto se puede realizar desde el runner y desde el feature.
+4. el reporte esta en la carpeta target
+
