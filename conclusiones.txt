@@ -1,3 +1,5 @@
-Se agregan mascotas exitosamente
-luego se consultan las mascotas ingresadas
-las actualizamos y por ultimo la consultamos con un parametro
+- Para el manejo de Apis se utiliza kareta como framework indicado ya que su analogia es mas facil de entender y ejecutar
+- El proyecto se puede ejecutar desde el runner o desde el mismo feature indicado
+- El sistema consulta, inserta y modifca informacion por mascota correctamente
+
+
