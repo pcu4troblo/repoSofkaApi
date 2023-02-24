@@ -16,16 +16,9 @@ import java.util.List;
 public class TestParallel {
 
     @Test
-    public void teste2eintranet() {
-        Results results = Runner.path("classpath:flujo_intranet/e2ecuentaconecta.feature")
+    public void teste2e() {
+        Results results = Runner.path("classpath:mypet/mypets.feature")
                 .outputCucumberJson(true)
-                .parallel(1);
-        generateReport(results.getReportDir());
-    }
-
-    @Test
-    public void teste2einternet() {
-        Results results = Runner.path("classpath:flujo_internet/e2ecuentaconecta.feature").outputCucumberJson(true)
                 .parallel(1);
         generateReport(results.getReportDir());
     }
