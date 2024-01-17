@@ -1,5 +1,10 @@
-- Para el manejo de Apis se utiliza kareta como framework indicado ya que su analogia es mas facil de entender y ejecutar
-- El proyecto se puede ejecutar desde el runner o desde el mismo feature indicado
-- El sistema consulta, inserta y modifca informacion por mascota correctamente
+Conclusiones
+- Las pruebas de API se ejecutaron exitosamente en su totalidad.
+- Se verificó que cada una de los servicios respondieran segun lo esperado en los criterios de aceptación.
+- La herramienta Karate facilita la creación de pruebas automatizadas a servicios, ya que gran parte de la configuracion
+se hace directamente desde los archivos .feature de una forma intuitiva y entendible incluso para personas que no
+tienen muchos conocimientos de codificación.
+- El ejercicio es de gran utilidad para aplicar los conceptos básicos de pruebas a servicios y de implementación de
+la herramienta Karate.
 
 

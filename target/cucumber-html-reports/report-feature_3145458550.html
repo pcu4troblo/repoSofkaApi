@@ -1,0 +1,2434 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: demoblaze/demoblaze.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>karateTesting</td>
+      <td>16 ene 2024, 21:30</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">demoblaze/demoblaze.feature</td>
+          <td      class="passed"    >49</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">49</td>
+
+          <td  class="passed"    >9</td>
+          <td >0</td>
+          <td class="total">9</td>
+
+          <td class="duration" data-value="2709775400">2.709</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">demoblaze/demoblaze.feature</span>
+
+
+</div>
+
+        <div class="description indention">Crear usuario y autenticar en demoblaze
+Yo como usuario
+  Necesito crear mis credenciales
+  Para ingresar al aplicativo demoblaze</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3734303269.html">@CrearUsuarioExitoso</a>
+</div>
+
+
+  <span class="lead-duration duration">0.817</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Creacion de usuario exitosa</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomNumber = function(min, max) { return Math.floor(Math.random() * (max - min + 1) + min); }</span>
+
+  <span class="lead-duration duration">0.013</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>21:30:16.937 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomUsername = 'nmdfgr' + randomNumber(1, 1000)</span>
+
+  <span class="lead-duration duration">0.008</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomPassword = 'MTIzNDU=' + randomNumber(1, 1000)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def signUpPayload = { &quot;username&quot;: &quot;#(randomUsername)&quot;, &quot;password&quot;: &quot;#(randomPassword)&quot; }</span>
+
+  <span class="lead-duration duration">0.041</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://api.demoblaze.com/signup'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request signUpPayload</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.729</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>21:30:17.277 request:
+1 &gt; POST https://api.demoblaze.com/signup
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 49
+1 &gt; Host: api.demoblaze.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;nmdfgr124&quot;,&quot;password&quot;:&quot;MTIzNDU=869&quot;}
+
+21:30:17.770 response time in milliseconds: 491
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; X-Cloud-Trace-Context: 2576f82219165e01131f04ff4b1a9bb9;o=1
+1 &lt; Date: Wed, 17 Jan 2024 02:30:17 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Content-Length: 3
+&quot;&quot;
+
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.errorMessage == null</span>
+
+  <span class="lead-duration duration">0.014</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2343324425.html">@CrearUsuarioExistente</a>
+</div>
+
+
+  <span class="lead-duration duration">0.229</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Creacion de usuario ya existente</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-5" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-6" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://api.demoblaze.com/signup'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>21:30:17.825 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request  { &quot;username&quot;: &quot;jpra1&quot;, &quot;password&quot;: &quot;NTQzMjE=&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.227</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>21:30:17.828 request:
+1 &gt; POST https://api.demoblaze.com/signup
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 42
+1 &gt; Host: api.demoblaze.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;jpra1&quot;,&quot;password&quot;:&quot;NTQzMjE=&quot;}
+
+21:30:18.053 response time in milliseconds: 225
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Cloud-Trace-Context: 07bb297be675f01ef6cd163ef42c1468
+1 &lt; Date: Wed, 17 Jan 2024 02:30:18 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Cache-Control: private
+1 &lt; Transfer-Encoding: chunked
+{&quot;errorMessage&quot;:&quot;This user already exist.&quot;}
+
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.errorMessage == &quot;This user already exist.&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2343324425.html">@CrearUsuarioExistente</a>
+</div>
+
+
+  <span class="lead-duration duration">0.298</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Creacion de usuario ya existente</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-9" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-10" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://api.demoblaze.com/signup'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>21:30:18.060 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request  { &quot;username&quot;: &quot;jpra2&quot;, &quot;password&quot;: &quot;NTQzMjE=&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.296</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>21:30:18.062 request:
+1 &gt; POST https://api.demoblaze.com/signup
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 42
+1 &gt; Host: api.demoblaze.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;jpra2&quot;,&quot;password&quot;:&quot;NTQzMjE=&quot;}
+
+21:30:18.357 response time in milliseconds: 295
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Cloud-Trace-Context: 4590335a68ceb281d53f0c973933d514
+1 &lt; Date: Wed, 17 Jan 2024 02:30:18 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Cache-Control: private
+1 &lt; Transfer-Encoding: chunked
+{&quot;errorMessage&quot;:&quot;This user already exist.&quot;}
+
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.errorMessage == &quot;This user already exist.&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2343324425.html">@CrearUsuarioExistente</a>
+</div>
+
+
+  <span class="lead-duration duration">0.298</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Creacion de usuario ya existente</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://api.demoblaze.com/signup'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>21:30:18.364 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request  { &quot;username&quot;: &quot;jpra3&quot;, &quot;password&quot;: &quot;NTQzMjE=&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.297</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>21:30:18.366 request:
+1 &gt; POST https://api.demoblaze.com/signup
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 42
+1 &gt; Host: api.demoblaze.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;jpra3&quot;,&quot;password&quot;:&quot;NTQzMjE=&quot;}
+
+21:30:18.661 response time in milliseconds: 295
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Cloud-Trace-Context: 01a7d33e506946697d7b762e83b1e916
+1 &lt; Date: Wed, 17 Jan 2024 02:30:18 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Cache-Control: private
+1 &lt; Transfer-Encoding: chunked
+{&quot;errorMessage&quot;:&quot;This user already exist.&quot;}
+
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.errorMessage == &quot;This user already exist.&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2343324425.html">@CrearUsuarioExistente</a>
+</div>
+
+
+  <span class="lead-duration duration">0.208</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Creacion de usuario ya existente</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-17" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-18">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-18" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://api.demoblaze.com/signup'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>21:30:18.668 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request  { &quot;username&quot;: &quot;jpra4&quot;, &quot;password&quot;: &quot;NTQzMjE=&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.207</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>21:30:18.670 request:
+1 &gt; POST https://api.demoblaze.com/signup
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 42
+1 &gt; Host: api.demoblaze.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;jpra4&quot;,&quot;password&quot;:&quot;NTQzMjE=&quot;}
+
+21:30:18.876 response time in milliseconds: 206
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Cloud-Trace-Context: beb0c06a4e9aa83eebfadab953daefc4
+1 &lt; Date: Wed, 17 Jan 2024 02:30:19 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Cache-Control: private
+1 &lt; Transfer-Encoding: chunked
+{&quot;errorMessage&quot;:&quot;This user already exist.&quot;}
+
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.errorMessage == &quot;This user already exist.&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2343324425.html">@CrearUsuarioExistente</a>
+</div>
+
+
+  <span class="lead-duration duration">0.203</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Creacion de usuario ya existente</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-21" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-22">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-22" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://api.demoblaze.com/signup'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details">
+        <pre>21:30:18.881 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request  { &quot;username&quot;: &quot;jpra5&quot;, &quot;password&quot;: &quot;NTQzMjE=&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.202</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details">
+        <pre>21:30:18.883 request:
+1 &gt; POST https://api.demoblaze.com/signup
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 42
+1 &gt; Host: api.demoblaze.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;jpra5&quot;,&quot;password&quot;:&quot;NTQzMjE=&quot;}
+
+21:30:19.084 response time in milliseconds: 201
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Cloud-Trace-Context: 03dc13c719b6572ff6ae3c6a4863913d
+1 &lt; Date: Wed, 17 Jan 2024 02:30:19 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Cache-Control: private
+1 &lt; Transfer-Encoding: chunked
+{&quot;errorMessage&quot;:&quot;This user already exist.&quot;}
+
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.errorMessage == &quot;This user already exist.&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2435736317.html">@AutenticacionExitosa</a>
+</div>
+
+
+  <span class="lead-duration duration">0.239</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-25">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Autenticacion exitosa</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-25" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-26">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-26" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://api.demoblaze.com/login'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-27">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-27" class="collapse collapsable-details">
+        <pre>21:30:19.089 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request  { &quot;username&quot;: &quot;jpra8&quot;, &quot;password&quot;: &quot;12345&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.237</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-28">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-28" class="collapse collapsable-details">
+        <pre>21:30:19.091 request:
+1 &gt; POST https://api.demoblaze.com/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 39
+1 &gt; Host: api.demoblaze.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;jpra8&quot;,&quot;password&quot;:&quot;12345&quot;}
+
+21:30:19.327 response time in milliseconds: 236
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Cloud-Trace-Context: 05a3341872798f62bcf1543b5624f2a2
+1 &lt; Date: Wed, 17 Jan 2024 02:30:19 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Cache-Control: private
+1 &lt; Transfer-Encoding: chunked
+&quot;Auth_token: anByYTgxNzA2MDU4&quot;
+
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.errorMessage == null</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2555736791.html">@UsuarioIncorrecto</a>
+</div>
+
+
+  <span class="lead-duration duration">0.202</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-29">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Usuario incorrecto al autenticar</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-29" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-30">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-30" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://api.demoblaze.com/login'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-31">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-31" class="collapse collapsable-details">
+        <pre>21:30:19.332 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request  { &quot;username&quot;: &quot;xmls.-12&quot;, &quot;password&quot;: &quot;12345&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.201</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-32">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-32" class="collapse collapsable-details">
+        <pre>21:30:19.333 request:
+1 &gt; POST https://api.demoblaze.com/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 42
+1 &gt; Host: api.demoblaze.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;xmls.-12&quot;,&quot;password&quot;:&quot;12345&quot;}
+
+21:30:19.533 response time in milliseconds: 199
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Cloud-Trace-Context: 4442d7fbbe68d711a7b2d3d02b0dc7f9
+1 &lt; Date: Wed, 17 Jan 2024 02:30:19 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Cache-Control: private
+1 &lt; Transfer-Encoding: chunked
+{&quot;errorMessage&quot;:&quot;User does not exist.&quot;}
+
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.errorMessage == &quot;User does not exist.&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2177365569.html">@ContrasenaIncorrecta</a>
+</div>
+
+
+  <span class="lead-duration duration">0.212</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-33">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Contrasena incorrecta al autenticar</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-33" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-34">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-34" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://api.demoblaze.com/login'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-35">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-35" class="collapse collapsable-details">
+        <pre>21:30:19.539 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request  { &quot;username&quot;: &quot;jpra&quot;, &quot;password&quot;: &quot;54321&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.210</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-36">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-36" class="collapse collapsable-details">
+        <pre>21:30:19.541 request:
+1 &gt; POST https://api.demoblaze.com/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 38
+1 &gt; Host: api.demoblaze.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;jpra&quot;,&quot;password&quot;:&quot;54321&quot;}
+
+21:30:19.750 response time in milliseconds: 209
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Cloud-Trace-Context: 137177511873c02b631fb24006858d13
+1 &lt; Date: Wed, 17 Jan 2024 02:30:19 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Cache-Control: private
+1 &lt; Transfer-Encoding: chunked
+{&quot;errorMessage&quot;:&quot;Wrong password.&quot;}
+
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.errorMessage == &quot;Wrong password.&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

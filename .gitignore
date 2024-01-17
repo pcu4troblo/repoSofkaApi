@@ -19,7 +19,6 @@
 out/
 
 #Serenity
-target/
 build/
 
 #gradle

@@ -12,12 +12,11 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-
-public class TestParallel {
+public class DemoblazeRunner {
 
     @Test
     public void teste2e() {
-        Results results = Runner.path("classpath:mypet/mypets.feature")
+        Results results = Runner.path("classpath:demoblaze/demoblaze.feature")
                 .outputCucumberJson(true)
                 .parallel(1);
         generateReport(results.getReportDir());
